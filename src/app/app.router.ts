@@ -6,6 +6,7 @@ import{ RegisterComponent } from "./register/register.component";
 import{ UserListComponent } from "./user-list/user-list.component";
 import{ EditUserComponent } from "./edit-user/edit-user.component";
 import{ ViewUserComponent } from "./view-user/view-user.component";
+import{ AnimationComponent } from "./animation/animation.component";
 
 
 
@@ -15,7 +16,8 @@ export const router: Routes = [
     { path: "register", component:RegisterComponent},
     { path: "user-list", component:UserListComponent},
     { path: "edit-user", component:EditUserComponent},
-    { path: "view-user", component:ViewUserComponent}
+    { path: "view-user", component:ViewUserComponent},
+    { path: "animation", component:AnimationComponent}
     
 ];
 

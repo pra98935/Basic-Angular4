@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import {ApiService} from '../api.service';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +13,13 @@ export class LoginComponent implements OnInit {
 
   titke = "submit";
 
-  constructor() { }
+  constructor(private newService:ApiService){}
 
   ngOnInit() {
+    this.newService.fetchData()
+    .subscribe(function(t){
+      console.log(t);
+      });
   }
 
   addContact(){
